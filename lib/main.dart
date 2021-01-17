@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_push_notification/widget/messaging_widget.dart';
 
 void main() => runApp(PushNotification());
 
@@ -11,7 +12,7 @@ class PushNotification extends StatelessWidget {
         appBar: AppBar(
           title: Text("Push notification"),
         ),
-        body: Center(child: Text("Push Notification using firebase and flutter")),
+        body: MessagingWidget(),
       ),
     );
   }
